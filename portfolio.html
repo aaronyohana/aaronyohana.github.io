@@ -1,10 +1,26 @@
 <!DOCTYPE portfolio>
 <html>
+
+<head>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<script>
+    const sound = new Audio()
+
+    function playCelebration() {
+        sound.src="duvet.mp3"
+        sound.play()
+    }
+</script>
+
 <body>
-
-<h1>Welcome to aaronstuff</h1>
-
-<p>This will include all the things I make!</p>
-
+    <div class="container">
+        <img src="waves.gif" id="gif1">
+        <h1> aaronstuff </h1>
+        <p>This will include all the things I make!</p>
+        <img src="paulandbill.jpeg" id="image1" onclick="playCelebration()">
+    </div>
 </body>
+
 </html>
