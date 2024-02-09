@@ -1,3 +1,12 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: unset;
+}
+
 #gif1 {
     width: 100%;
     height: 300px;
@@ -7,12 +16,65 @@
 
 h1 {
     width: 100%;
+    height: 50px;
     position: absolute;
-    margin-top: -180px;
+    top: 120px;
+    padding: 0;
+    margin: 0;
     color:rgb(255, 255, 255);
     text-align: center;
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position:sticky;
+    position:-webkit-sticky;
+    top: 0px;
+    width: 30%;
+    height: 35px;
+    padding-left: 35%;
+    padding-right: 35%;
+    margin-top: -10px;
+    background-color: rgb(1, 22, 56);
+}
+
+.menu-options {
+    height: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    list-style-type: none;
+    text-decoration: none;
+}
+#menu-item {
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#menu-item:visited {
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+}
+#menu-item:focus {
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+}
+#menu-item:hover {
+    cursor: pointer;
+    color: rgb(238, 174, 54);
+}
+
+#intro {
+    height: 3000px;
 }
 
 p {

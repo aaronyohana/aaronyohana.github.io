@@ -9,19 +9,29 @@
 <script>
     const sound = new Audio()
 
-    function playCelebration() {
+    function playMusic() {
         sound.src="media/duvet.mp3"
         sound.play()
-    }
+}
 </script>
 
 <body>
-    <div class="container">
+    <header>
         <img src="media/waves.gif" id="gif1">
         <h1> aaronstuff </h1>
+        <nav> 
+            <ul class="menu-options">
+                <a href="/docs/index.html"> <li id="menu-item">about</li> </a>
+                <a href="/docs/index.html"> <li id="menu-item">projects</li> </a>
+                <a href="https://youtu.be/tkzY_VwNIek?si=oSY3pIADpv-XkoN1"> <li id="menu-item">music</li> </a>
+                <a href="/docs/index.html"> <li id="menu-item">blog</li> </a>
+            </ul>
+        </nav>
+    </header>
+    <section id="intro">
         <p>This will include all the things I make!</p>
-        <img src="media/paulandbill.jpeg" id="image1" onclick="playCelebration()">
-    </div>
+        <img src="media/paulandbill.jpeg" id="image1" onclick="playMusic()">
+    </section>
 </body>
 
 </html>
