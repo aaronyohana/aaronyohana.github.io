@@ -3,36 +3,50 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="media/png" href="media/favicon.png">
-    <link rel="apple-touch-icon" href="media/favicon.png">
+    <link rel="icon" type="media/png" href="media/world.png">
+    <link rel="apple-touch-icon" href="media/world.png">
     <title>aaronstuff - home</title>
+
 </head>
 
 <script>
-    const sound = new Audio()
+    const song = new Audio()
 
     function playMusic() {
-        sound.src="media/duvet.mp3"
+        song.src="media/duvet.mp3"
+        song.play()
+    }
+    const sound = new Audio()
+
+    function playSound() {
+        sound.src="media/fnaf.mp3"
         sound.play()
-}
+    }
 </script>
 
 <body>
     <header>
-        <img src="media/waves.gif" id="gif1">
-        <h1> aaronstuff </h1>
-        <nav> 
-            <ul class="menu-options">
-                <a href="/docs/index.html"> <li id="menu-item">about</li> </a>
-                <a href="/docs/index.html"> <li id="menu-item">projects</li> </a>
-                <a href="https://youtu.be/tkzY_VwNIek?si=oSY3pIADpv-XkoN1"> <li id="menu-item">music</li> </a>
-                <a href="/docs/index.html"> <li id="menu-item">blog</li> </a>
-            </ul>
-        </nav>
+        <div id="nav_bar">
+            <button id="title" onclick="window.location.href=window.location.href">aaronstuff.<span id="sucks">SUCKS</span></button> 
+            <nav>
+                <ul class="menu-options">
+                    <a href="/docs/index.html"> <li class="menu-item">about</li> </a>
+                    <a href="/docs/index.html"> <li class="menu-item">projects</li> </a>
+                    <a href="https://youtu.be/tkzY_VwNIek?si=oSY3pIADpv-XkoN1"> <li class="menu-item">music</li> </a>
+                    <a href="/docs/index.html"> <li class="menu-item">blog</li> </a>
+                </ul>
+                <div class="circle"></div>
+                <img src="media/world.png" id="logo" onclick="playSound()">
+            </nav>
+        </div>
     </header>
+    <div id="main">
+        <img src="media/main.jpg" id="overlay">
+        <h1> aaronstuff </h1>
+    </div>
     <section id="intro">
         <p>This will include all the things I make!</p>
-        <img src="media/paulandbill.jpeg" id="image1" onclick="playMusic()">
+        <img src="media/paulandbill.jpeg" id="image2" onclick="playMusic()">
     </section>
 </body>
 
