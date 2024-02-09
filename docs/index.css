@@ -92,5 +92,6 @@ p {
 }
 
 #image1:hover {
+    cursor: pointer;
     border-width: 5px;
 }
