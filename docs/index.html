@@ -6,20 +6,19 @@
     <link rel="icon" type="media/png" href="media/world.png">
     <link rel="apple-touch-icon" href="media/world.png">
     <title>aaronstuff - home</title>
-
 </head>
 
 <script>
     const song = new Audio()
 
     function playMusic() {
-        song.src="media/duvet.mp3"
+        song.src="./media/duvet.mp3"
         song.play()
     }
     const sound = new Audio()
 
     function playSound() {
-        sound.src="media/fnaf.mp3"
+        sound.src="./media/fnaf.mp3"
         sound.play()
     }
 </script>
@@ -27,27 +26,39 @@
 <body>
     <header>
         <div id="nav_bar">
-            <button id="title" onclick="window.location.href=window.location.href">aaronstuff.<span id="sucks">SUCKS</span></button> 
+            <button id="title" onclick="window.location.href='./index.html'">aaronstuff.<span id="sucks">SUCKS</span></button> 
             <nav>
                 <ul class="menu-options">
-                    <a href="/docs/index.html"> <li class="menu-item">about</li> </a>
-                    <a href="/docs/index.html"> <li class="menu-item">projects</li> </a>
-                    <a href="https://youtu.be/tkzY_VwNIek?si=oSY3pIADpv-XkoN1"> <li class="menu-item">music</li> </a>
-                    <a href="/docs/index.html"> <li class="menu-item">blog</li> </a>
+                    <a href="./about.html"> <li class="menu-item">about</li> </a>
+                    <a href="./index.html"> <li class="menu-item">projects</li> </a>
+                    <a href="https://soundcloud.com/user-122046592?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"> <li class="menu-item">music</li> </a>
+                    <a href="./index.html"> <li class="menu-item">blog</li> </a>
                 </ul>
-                <div class="circle"></div>
+                <div class="semicircle"></div>
                 <img src="media/world.png" id="logo" onclick="playSound()">
             </nav>
         </div>
     </header>
     <div id="main">
-        <img src="media/main.jpg" id="overlay">
+        <div id="gradient">
+            <section id="up"></section>
+            <section id="down"></section>
+            <section id="left"></section>
+            <section id="right"></section>
+        </div>
+        <div id="grain"></div>
         <h1> aaronstuff </h1>
     </div>
-    <section id="intro">
-        <p>This will include all the things I make!</p>
+    <div id="intro">
+        <p>"Hi, it's Bill Hader and Paul Rudd, and we just wanted to say this website Aaron made is pretty cool. 
+        And you can say we're pretty good judges because we're famous and do TV/Movies. Some people think we're brothers!"
+        </p>
         <img src="media/paulandbill.jpeg" id="image2" onclick="playMusic()">
-    </section>
+    </div>
+    <div id="block">
+
+    </div>
 </body>
+
 
 </html>
