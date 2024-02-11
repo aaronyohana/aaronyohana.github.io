@@ -3,7 +3,7 @@
 body {
     padding: 0;
     margin: 0;
-    height: 3200px;
+    height: 800px;
 }
 
 a {
@@ -14,28 +14,35 @@ header {
     display: unset;
 }
 
-#nav_bar {
+nav {
     position:sticky;
     position:-webkit-sticky;
     top: 0px;
     z-index: 4;
     background-color: rgb(251, 80, 18);
-    height: 150px;
+    height: 75px;
 }
 
-nav {
+#nav_bar {
+    height: 100%;
+    transform: translateY(25px);
+}
+
+#right-side {
+    position: absolute;
+    top: 5px;
+    left: 50%;
     height: 100%;
     width: 30%;
-    padding-left: 65%;
+    padding-left: 15%;
     padding-right: 5%;
 }
 
 #title {
     padding: 0 0 0 5%;
-    transform: translate(0, 50px);
     text-decoration: none;
     color: rgb(238, 239, 241);
-    font-size: 40px;
+    font-size: 24px;
     font-family: 'Averia Serif Libre', serif;
     border: none;
     background-color: transparent;
@@ -53,7 +60,6 @@ nav {
 
 .menu-options {
     display: flex;
-    transform: translate(0, 13px);
     padding: 0;
     margin: 0;
     justify-content: space-between;
@@ -64,7 +70,8 @@ nav {
 .menu-item {
     text-decoration: none;
     color: rgb(238, 239, 241);
-    font-size: 30px;
+    font-size: 16px;
+    align-items: center;
     font-family: 'Averia Serif Libre', serif;
 }
 .menu-item:visited {
@@ -82,25 +89,25 @@ nav {
 }
 
 .semicircle {
-    width: 250px;
-    height: 125px;
+    width: 125px;
+    height: 62.5px;
     position: absolute;
     left: 50%;
-    top: 150px;
+    top: 50px;
     transform: translate(-50%);
     background-color: rgb(251, 80, 18);
-    border-radius: 0 0 125px 125px;
+    border-radius: 0 0 62.5px 62.5px;
 
 }
 
 #logo {
     display: block;
     backdrop-filter: drop-shadow(10px 10px 10px black);
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     left: 50%;
-    top: -5px;
+    top: -25px;
     transform: translate(-48%);
     z-index: 5;
 }
@@ -109,12 +116,59 @@ nav {
     cursor: pointer;
 }
 
-h1 {
-    position: absolute;
-    top: 500px;
-    left: 10%;
-    font-size: 90px;
+#main {
     font-family: 'Averia Serif Libre', serif;
+}
+
+#header {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    font-size: min(60px, calc(24px + 4vw));
+    cursor: zoom-in;
+}
+
+#p1 {
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    right: 25%;
+    font-size: min(32px, calc(12px + 2vw));
+    cursor: zoom-in;
+    text-align: center;
+}
+
+#p2 {
+    position: absolute;
+    width: 40%;
+    top: 40%;
+    right: 5%;
+    font-size: min(32px, calc(12px + 2vw));
+    cursor: zoom-in;
+    text-align: center;
+}
+
+#p3 {
+    position: absolute;
+    width: 40%;
+    top: 55%;
+    right: 25%;
+    font-size: min(32px, calc(12px + 2vw));
+    cursor: zoom-in;
+    text-align: center;
+}
+
+#p4 {
+    position: absolute;
+    width: 40%;
+    top: 80%;
+    right: 5%;
+    font-size: min(32px, calc(12px + 2vw));
+    cursor: zoom-in;
+    text-align: center;
+}
+
+.blurry {
     filter: blur(10px);
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
@@ -126,8 +180,11 @@ h1 {
     transform: translateZ(0);
 }
 
-h1:hover {
-    transition: 0.5s;
-    cursor: zoom-in;
-    filter: blur(0);
+.clear {
+    animation: enhance 0.5s;
+}
+
+@keyframes enhance {
+    0% {filter: blur(10px);}
+    100% {filter: blur(1px);}
 }
