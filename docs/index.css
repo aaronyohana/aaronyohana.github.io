@@ -5,6 +5,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
+    max-height: 100vh;
 }
 
 a {
@@ -103,17 +104,14 @@ nav {
 
 #logo {
     display: block;
-    backdrop-filter: drop-shadow(10px 10px 10px black);
-    width: 150px;
-    height: 150px;
     position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     left: 50%;
-    top: -25px;
-    transform: translate(-48%);
+    top: 0px;
+    transform: translate(-50%);
     z-index: 5;
-}
-
-#logo:hover {
     cursor: pointer;
 }
 
@@ -123,7 +121,7 @@ nav {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 800px;
+    height: 90vh;
     background-image: linear-gradient(80deg, rgba(251, 80, 18, 0.855), rgb(255, 140, 102));
     overflow: hidden;
     z-index: 1;
@@ -275,7 +273,7 @@ h1 {
     width: 100%;
     height: 50px;
     position: absolute;
-    top: 150px;
+    top: 20%;
     padding: 0;
     margin: 0;
     color: rgb(255, 254, 249);
@@ -290,7 +288,7 @@ h1 {
 #intro {
     position: relative;
     top: -170px;
-    height: 200px;
+    height: 22.5vh;
     width: 100%;
     background-color: rgb(37, 19, 6);
     z-index: 3;
@@ -303,7 +301,7 @@ p {
     margin: 0%;
     padding-left: 150px;
     padding-right: 5%;
-    margin-top: 30px;
+    margin-top: 45px;
     top: -50px;
     align-items: center;
     font-family: 'Averia Serif Libre', serif;
@@ -320,10 +318,6 @@ p {
     margin-top: 30px;
     margin-left: 30px;
     transform: translate(-50% -50%);
-    border: 3px solid rgb(223, 100, 0);
-}
-
-#image2:hover {
+    border: 3px solid rgb(23, 9, 0);
     cursor: pointer;
-    border-width: 5px;
 }
