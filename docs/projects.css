@@ -116,15 +116,34 @@ nav {
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 10vh;
     font-family: 'Averia Serif Libre', serif;
+    color: rgb(238, 239, 241);
+    text-shadow: 3px 3px rgba(0, 41, 23, 0.75);
+    filter: blur(.3px);
 }
 
 h1 {
     margin: 0;
-    font-size: 36px;
-    color: rgb(238, 239, 241);
-    text-shadow: 3px 3px rgba(0, 41, 23, 0.75);
-    filter: blur(.3px);
+    font-size: calc(12px + 2vh);
+}
+
+.projects {
+    padding-top: 5%;
+    text-align: center;
+    font-size: calc(8px + 1vh);
+}
+
+#project1 {
+    margin: 0;
+    width: 51.4vw;
+    height: 40vw;
+    object-fit: contain;
+}
+
+#project1:hover {
+    opacity: 75%;
 }

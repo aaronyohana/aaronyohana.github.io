@@ -153,6 +153,18 @@ nav {
     margin-bottom: 0;
 }
 
+#selfie {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 10vw;
+    top: 25%;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 5%;
+    box-shadow: 1vw 1vw rgb(37, 19, 6);
+}
+
 .blurry {
     filter: blur(10px);
     -webkit-backface-visibility: hidden;
