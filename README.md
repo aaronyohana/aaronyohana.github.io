@@ -1,4 +1,5 @@
-# portfolio-website
-Portfolio Website for Aaron Yohana
+# art website
 
-domain aaronstuff.sucks
+Art collective designed by Aaron Yohana
+
+cn cn
