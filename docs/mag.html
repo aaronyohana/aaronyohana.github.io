@@ -4,10 +4,36 @@
     <head>
         <link rel="stylesheet" href="mag.css">
     </head>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
     <body>
         <nav>
             <ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="menu-options" href="./index.html">home</a>
+                        <a class="menu-options" href="./mag.html">mag</a>
+                        <a class="menu-options" href="./index.html">store</a>
+                    </div>
+                </div>
                 <div class="nav1">
                     <li><a class="menu-options" href="./index.html">home</a></li>
                     <li><a class="menu-options" href="./mag.html">mag</a></li>
