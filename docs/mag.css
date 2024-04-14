@@ -5,7 +5,7 @@ body {
     height: 200vh;
     margin: 0;
     overflow: visible;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(12, 12, 12)
 }
 nav {
     position: sticky;
@@ -33,7 +33,7 @@ li {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(249, 242, 234);
 }
 .menu-title {
     font-size: 2.25rem;
@@ -47,7 +47,7 @@ a {
 .menu-options:hover {
     transition: 300ms;
     background-color: yellow;
-    color: black;
+    color: rgb(12,12,12);
 }
 #logo {
     width: 40px;
@@ -93,7 +93,6 @@ a {
         position: absolute;
         background-color: rgb(12, 12, 12);
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         transform: translateY(10px);
     }
@@ -102,7 +101,7 @@ a {
     .dropdown-content a {
         padding-top: 1vh;
         margin-left: 5vw;
-        color: white;
+        color: rgb(249, 242, 234);
         text-decoration: none;
         display: block;
     }
