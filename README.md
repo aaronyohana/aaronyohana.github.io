@@ -1,4 +1,5 @@
-# portfolio-website
-Portfolio Website for Aaron Yohana
+# art website
 
-domain aaronstuff.sucks
+cncn is an Art Collective started by Aaron Yohana
+
+/cn if i cn bleed/
