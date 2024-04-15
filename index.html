@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="media/png" href="./world.png">
+    <link rel="apple-touch-icon" href="./world.png">
+    <title>aaronstuff - home</title>
+</head>
+
+<script>
+    const song = new Audio()
+
+    function playMusic() {
+        song.src="./media/duvet.mp3"
+        song.play()
+    }
+    const sound = new Audio()
+
+    function playSound() {
+        sound.src="./media/fnaf.mp3"
+        sound.play()
+    }
+</script>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav_bar">
+                <button id="title" onclick="window.location.href='./index.html'">aaronstuff.<span id="sucks">SUCKS</span></button> 
+                <div id="right-side">
+                    <div class="menu-options">
+                        <a href="./about.html"> <li class="menu-item">about</li> </a>
+                        <a href="./projects.html"> <li class="menu-item">projects</li> </a>
+                        <a href="https://soundcloud.com/user-122046592?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"> <li class="menu-item">music</li> </a>
+                        <a href="./blog.html"> <li class="menu-item">blog</li> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="semicircle"></div>
+            <img src="media/world.png" id="logo" onclick="playSound()">
+        </nav>
+    </header>
+    <div id="main">
+        <div id="gradient">
+            <section id="up"></section>
+            <section id="down"></section>
+            <section id="left"></section>
+            <section id="right"></section>
+        </div>
+        <div id="grain"></div>
+        <h1> aaronstuff </h1>
+    </div>
+    <div id="intro">
+        <img src="media/paulandbill.jpeg" id="image2" onclick="playMusic()">
+        <p>"Hi, it's Bill Hader and Paul Rudd, and we just wanted to say this website Aaron made is pretty cool. 
+        And you can say we're pretty good judges because we're famous and do TV/Movies. Some people think we're brothers!"
+        </p>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="icon" type="media/png" href="./world.png">
+    <link rel="apple-touch-icon" href="./world.png">
+    <title>aaronstuff - blog</title>
+</head>
+
+<script>
+    const sound = new Audio();
+
+    function playSound() {
+        sound.src="media/fnaf.mp3"
+        sound.play()
+    } 
+</script>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav_bar">
+                <button id="title" onclick="window.location.href='./index.html'">aaronstuff.<span id="sucks">SUCKS</span></button> 
+                <div id="right-side">
+                    <div class="menu-options">
+                        <a href="./about.html"> <li class="menu-item">about</li> </a>
+                        <a href="./projects.html"> <li class="menu-item">projects</li> </a>
+                        <a href="https://soundcloud.com/user-122046592?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"> <li class="menu-item">music</li> </a>
+                        <a href="./blog.html"> <li class="menu-item">blog</li> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="semicircle"></div>
+            <img src="media/world.png" id="logo" onclick="playSound()">
+        </nav>
+    </header>
+    <h1>blog</h1>
+    <main>
+        <div class="articles">
+            <article id="featured">
+                <h3 class="feat">TRAVEL</h3>
+                <h2>Aaron returns home</h2>
+                <p>This is a summary of the blog post. Inside of this blog post there will be a readable article. Isn't that amazing? Blogs are so fun.
+                    This is a summary of the blog post. Inside of this blog post there will be a readable article. Isn't that amazing? Blogs are so fun.
+                    This is a summary of the blog post. Inside of this blog post there will be a readable article. Isn't that amazing? Blogs are so fun.
+                    This is a summary of the blog post. Inside of this blog post there will be a readable article. Isn't that amazing? Blogs are so fun.
+                </p>
+            </article>
+            <div class="sub-articles">
+                <article id="article-one">
+                    <h3 class="sub">HIKES</h3>
+                    <h2>Aaron goes on a hike</h2>
+                    <p></p>
+                </article>
+                <article id="article-two">
+                    <h3 class="sub">MUSIC</h3>
+                    <h2>Aaron writes a song</h2>
+                    <p></p>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

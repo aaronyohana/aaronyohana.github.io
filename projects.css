@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(37, 19, 6);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: unset;
+}
+
+nav {
+    position:sticky;
+    position:-webkit-sticky;
+    top: 0px;
+    z-index: 4;
+    background-color: rgb(251, 80, 18);
+    height: 10vh;
+}
+
+#nav_bar {
+    display: flex;
+    height: 100%;
+}
+
+#right-side {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 50vw;
+}
+
+#title {
+    width: 50vw;
+    padding-right: 10vw;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+    font-size: min(30px, 3vw);
+    font-family: 'Averia Serif Libre', serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#sucks:hover {
+    transition: 1s;
+    font-size: 30px;
+    color: red;
+}
+
+.menu-options {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 50vw;
+    padding-right: 5vw;
+    padding-left: 12vw;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.menu-item {
+    display: inline;
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+    font-size: min(2.5vh,max(24px, 1vh));
+    font-family: 'Averia Serif Libre', serif;
+}
+.menu-item:visited {
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+}
+.menu-item:focus {
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+}
+.menu-item:hover {
+    cursor: pointer;    
+    transition: 0.3s;
+    filter: drop-shadow(3px 3px 3px rgba(0, 41, 23, 0.75));
+}
+
+.semicircle {
+    width: min(200px, 15vh);
+    height: min(100px, 7.5vh);
+    position: absolute;
+    top: 10vh;
+    left: 50vw;
+    transform: translate(-50%);
+    border-radius: 0 0 calc(15px + min(100px, 7.5vh)) calc(15px + min(100px, 7.5vh));
+    border: 10px solid rgb(251, 80, 18);
+    border-top: 0;
+}
+
+#logo {
+    display: inline;
+    position: absolute;
+    width: min(200px,15vh);
+    height: min(200px,15vh);
+    top: 10vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    font-family: 'Averia Serif Libre', serif;
+    color: rgb(238, 239, 241);
+    text-shadow: 3px 3px rgba(0, 41, 23, 0.75);
+}
+
+h1 {
+    margin: 0;
+    font-size: calc(12px + 2vh);
+}
+
+.projects {
+    padding-top: 5%;
+    text-align: center;
+    font-size: calc(6px + 1vh);
+    font-style: italic;
+}
+
+#project1 {
+    margin: 0;
+    width: 51.4vw;
+    height: 40vw;
+    object-fit: contain;
+}
+
+#project1:hover {
+    opacity: 75%;
+}

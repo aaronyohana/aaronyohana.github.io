@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: rgb(238, 239, 241);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: unset;
+}
+
+nav {
+    position:sticky;
+    position:-webkit-sticky;
+    top: 0px;
+    z-index: 4;
+    background-color: rgb(251, 80, 18);
+    height: 10vh;
+}
+
+#nav_bar {
+    display: flex;
+    height: 100%;
+}
+
+#right-side {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 50vw;
+}
+
+#title {
+    width: 50vw;
+    padding-right: 10vw;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+    font-size: min(30px, 3vw);
+    font-family: 'Averia Serif Libre', serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#sucks:hover {
+    transition: 1s;
+    font-size: 30px;
+    color: red;
+}
+
+.menu-options {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 50vw;
+    padding-right: 5vw;
+    padding-left: 12vw;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.menu-item {
+    display: inline;
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+    font-size: min(2.5vh,max(24px, 1vh));
+    font-family: 'Averia Serif Libre', serif;
+}
+.menu-item:visited {
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+}
+.menu-item:focus {
+    text-decoration: none;
+    color: rgb(238, 239, 241);
+}
+.menu-item:hover {
+    cursor: pointer;    
+    transition: 0.3s;
+    filter: drop-shadow(3px 3px 3px rgba(0, 41, 23, 0.75));
+}
+
+.semicircle {
+    width: min(200px, 15vh);
+    height: min(100px, 7.5vh);
+    position: absolute;
+    top: 10vh;
+    left: 50vw;
+    transform: translate(-50%);
+    border-radius: 0 0 calc(15px + min(100px, 7.5vh)) calc(15px + min(100px, 7.5vh));
+    border: 10px solid rgb(251, 80, 18);
+    border-top: 0;
+}
+
+#logo {
+    display: inline;
+    position: absolute;
+    width: min(200px,15vh);
+    height: min(200px,15vh);
+    top: 10vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#main {
+    display: flexbox;
+    padding-left: 5%;
+    padding-top: 5%;
+    justify-content: space-around;
+    font-family: 'Averia Serif Libre', serif;
+    cursor: zoom-in;
+}
+
+#header {
+    width: 40%;
+    font-size: min(60px, calc(24px + 4vw));
+    margin-top: 0;
+}
+
+#p1 {
+    width: 40%;
+    font-size: min(32px, calc(12px + 2vw));
+    text-align: left;
+}
+
+#p2 {
+    width: 40%;
+    font-size: min(32px, calc(12px + 2vw));
+    text-align: left;
+}
+
+#p3 {
+    width: 40%;
+    font-size: min(32px, calc(12px + 2vw));
+    text-align: left;
+}
+
+#p4 {
+    width: 40%;
+    font-size: min(32px, calc(12px + 2vw));
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#selfie {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 10vw;
+    top: 25%;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 5%;
+    box-shadow: 1vw 1vw rgb(37, 19, 6);
+}
+
+.blurry {
+    filter: blur(10px);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    transform: translateZ(0);
+}
+
+.clear {
+    animation: enhance 0.5s;
+}
+
+@keyframes enhance {
+    0% {filter: blur(10px);}
+    100% {filter: blur(1px);}
+}
